@@ -3,7 +3,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 AOS.init();
 import "./custom-aos.css";
-import PropTypes from "prop-types";
 function AosProvider({ children }) {
   useEffect(() => {
     AOS.init({
@@ -14,9 +13,5 @@ function AosProvider({ children }) {
   }, []);
   return <>{children}</>;
 }
-
-AosProvider.propTypes = {
-  children: PropTypes.node,
-};
 
 export default AosProvider;
