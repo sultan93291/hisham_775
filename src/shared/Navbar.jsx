@@ -2,7 +2,7 @@ import { ContactSvg } from "../Components/Svg/SvgContainer";
 
 const Navbar = () => {
   return (
-    <nav className="py-8 sticky top-0 z-50">
+    <nav className="py-6 border-b border-gray-200 sticky top-0 z-50">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* Left - Logo */}
@@ -15,9 +15,7 @@ const Navbar = () => {
           <div className="flex gap-10 items-center">
             {/* Language Options */}
             <select className="border-none outline-none text-primary-blue font-medium text-lg">
-              <option value="">
-                <p>English</p>
-              </option>
+              <option value="">English</option>
               <option value="">Arabic</option>
             </select>
 
