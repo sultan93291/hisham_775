@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
 
         {/* Desc */}
-        <p className="py-10 max-w-[950px] mx-auto">
+        <p className="py-10 max-w-[1000px] mx-auto text-secondary-gray text-xl leading-[160%]">
           An AI-powered marketing platform that delivers hyper-targeted ads
           using real-time data helping businesses reach the right customers at
           the lowest cost. Launch Your Campaign

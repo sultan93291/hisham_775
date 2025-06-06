@@ -1,5 +1,5 @@
 const WhyChoose = () => {
-  return <div>WhyChoose</div>;
+  return <section className="py-40">WhyChoose</section>;
 };
 
 export default WhyChoose;

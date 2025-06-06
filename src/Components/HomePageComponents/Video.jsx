@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import video from "../../assets/recipe.mp4";
+import video from "../../assets/short_video.mp4";
 import { PauseButtonSvg, PlayButtonSvg } from "../Svg/SvgContainer";
 
 const Video = () => {
