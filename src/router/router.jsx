@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "../Pages/HomePage";
-import Layout from "../Layout/Laoyout";
-
+import Layout from "../Layout/Layout";
+import Home from "../Pages/Home";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +9,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <Home />,
       },
     ],
   },
