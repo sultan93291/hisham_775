@@ -2,7 +2,7 @@ import { ContactSvg } from "../Components/Svg/SvgContainer";
 
 const Navbar = () => {
   return (
-    <nav className="py-6 border-b border-gray-200 sticky top-0 z-50">
+    <nav className="py-6 bg-slate-50 sticky top-0 z-50">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* Left - Logo */}

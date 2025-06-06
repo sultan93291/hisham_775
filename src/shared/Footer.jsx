@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="pb-20">
       <div className="container">
         {/* Logo */}
-        <h2 className="text-[250px] font-bold bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10">
+        <h2 className="text-[250px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10">
           InsightReach
         </h2>
 
