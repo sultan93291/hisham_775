@@ -1,0 +1,115 @@
+import { useTranslation } from "react-i18next";
+import {
+  FFourSvg,
+  FOneSvg,
+  FThreeSvg,
+  FTwoSvg,
+  RightArrowSvg,
+} from "../Svg/SvgContainer";
+
+const KeyFeathers = () => {
+  const { t } = useTranslation();
+  const data = [
+    {
+      id: 1,
+      icon: <FOneSvg />,
+      title: t("feather_title_one"),
+      description: t("feather_description_one"),
+    },
+    {
+      id: 2,
+      icon: <FTwoSvg />,
+      title: t("feather_title_two"),
+      description: t("feather_description_two"),
+    },
+    {
+      id: 3,
+      icon: <FThreeSvg />,
+      title: t("feather_title_three"),
+      description: t("feather_description_three"),
+    },
+    {
+      id: 4,
+      icon: <FFourSvg />,
+      title: t("feather_title_four"),
+      description: t("feather_description_four"),
+    },
+  ];
+  return (
+    <section className="py-40">
+      <div className="container">
+        {/* Upper part */}
+        <div className="flex justify-between items-center gap-40 mb-12">
+          <div>
+            <div className="flex gap-3 items-center mb-5">
+              <h3 data-aos="fade-up" data-aos-delay="100" className="sub_title">
+                {t("feather_upper_sub_title")}
+              </h3>
+            </div>
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto"
+            >
+              {t("feather_upper_title")}
+            </h2>
+          </div>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="py-10 text-secondary-gray text-xl leading-[160%]"
+          >
+            {t("feather_upper_description")}
+          </p>
+        </div>
+
+        {/* Get Started btn */}
+        <button
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="w-fit mx-auto flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer mb-20"
+        >
+          <p>{t("feather_upper_btn")}</p>
+          <RightArrowSvg />
+        </button>
+
+        {/* Lower part */}
+        <div className="grid grid-cols-4 gap-6">
+          {data?.map(item => (
+            <div
+              key={item?.id}
+              className="border border-[#2466FF80] p-8 rounded-2xl shadow bg-white group hover:bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)] transition-all duration-500"
+            >
+              {/* Icon */}
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="w-24 h-24 rounded-full grid place-items-center bg-[#F5F8FC]"
+              >
+                {item?.icon}
+              </p>
+              {/* Title */}
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-2xl font-medium leading-[150%] py-5 group-hover:text-white"
+              >
+                {item?.title}
+              </h3>
+              {/* Description */}
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-secondary-gray leading-[150%] group-hover:text-[#E8E8E8]"
+              >
+                {item?.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default KeyFeathers;
