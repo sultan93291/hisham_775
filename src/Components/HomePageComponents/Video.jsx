@@ -29,7 +29,7 @@ const Video = () => {
     <section className="w-[1400px] h-[650px] relative group container !-mt-40">
       <video
         data-aos="fade-up"
-        data-aos-delay="100"
+        data-aos-delay="1000"
         ref={videoRef}
         className="w-full h-full object-cover rounded-2xl"
         src={video}

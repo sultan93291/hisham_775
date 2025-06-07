@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import hero from "../../assets/hero_frame.png";
 import union from "../../assets/hero_union.png";
 import { MouseSvg } from "../Svg/SvgContainer";
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "../../assets/lottieAnimation.json";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -21,11 +23,10 @@ const Hero = () => {
           <h3 className="sub_title">{t("hero_sub_title")}</h3>
           <MouseSvg />
         </div>
-
         {/* title */}
         <h1
           data-aos="fade-up"
-          data-aos-delay="100"
+          data-aos-delay="300"
           className="text-6xl font-semibold leading-[150%] max-w-[1000px] mx-auto"
         >
           {t("hero_title")}
@@ -34,17 +35,25 @@ const Hero = () => {
         {/* Desc */}
         <p
           data-aos="fade-up"
-          data-aos-delay="100"
+          data-aos-delay="500"
           className="py-10 max-w-[1000px] mx-auto text-secondary-gray text-xl leading-[160%]"
         >
           {t("hero_description")}
         </p>
-
+        {/* Lottie Animation */}
+        <div className="flex justify-center items-center absolute left-1/2 top-1/3 -translate-x-1/2">
+          <Lottie
+            animationData={groovyWalkAnimation}
+            loop={false}
+            autoplay={true}
+            style={{ width: 300, height: 300 }}
+          />
+        </div>
         {/* btn */}
         <button
           data-aos="fade-up"
-          data-aos-delay="100"
-          className="px-12 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4]"
+          data-aos-delay="700"
+          className="px-12 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4] relative"
         >
           {t("hero_btn")}
         </button>
