@@ -30,11 +30,19 @@ const HowItWorks = () => {
         {/* Upper part */}
         <div>
           <div className="flex gap-3 items-center mb-5">
-            <h3 className="sub_title text-center mx-auto">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="sub_title text-center mx-auto"
+            >
               {t("work_upper_title")}
             </h3>
           </div>
-          <h2 className="text-[34px] font-semibold leading-[150%] max-w-[1190px] text-center mx-auto mb-16">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-[34px] font-semibold leading-[150%] max-w-[1190px] text-center mx-auto mb-16"
+          >
             {t("work_upper_description")}
           </h2>
         </div>
@@ -44,15 +52,27 @@ const HowItWorks = () => {
           {data?.map(item => (
             <div key={item?.id} className="">
               {/* Icon */}
-              <p className="w-24 h-24 rounded-full grid place-items-center bg-white mx-auto">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="w-24 h-24 rounded-full grid place-items-center bg-white mx-auto"
+              >
                 {item?.icon}
               </p>
               {/* Title */}
-              <h3 className="text-2xl font-medium leading-[150%] py-5 group-hover:text-white">
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-2xl font-medium leading-[150%] py-5 group-hover:text-white"
+              >
                 {item?.title}
               </h3>
               {/* Description */}
-              <p className="text-secondary-gray leading-[165%] group-hover:text-[#E8E8E8]">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-secondary-gray leading-[165%] group-hover:text-[#E8E8E8]"
+              >
                 {item?.description}
               </p>
             </div>

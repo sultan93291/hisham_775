@@ -13,23 +13,39 @@ const Hero = () => {
     >
       <div className="container">
         {/* Sub title */}
-        <div className="flex gap-3 items-center justify-center mb-5">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="flex gap-3 items-center justify-center mb-5"
+        >
           <h3 className="sub_title">{t("hero_sub_title")}</h3>
           <MouseSvg />
         </div>
 
         {/* title */}
-        <h1 className="text-6xl font-semibold leading-[150%] max-w-[1000px] mx-auto">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-6xl font-semibold leading-[150%] max-w-[1000px] mx-auto"
+        >
           {t("hero_title")}
         </h1>
 
         {/* Desc */}
-        <p className="py-10 max-w-[1000px] mx-auto text-secondary-gray text-xl leading-[160%]">
-         {t("hero_description")}
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="py-10 max-w-[1000px] mx-auto text-secondary-gray text-xl leading-[160%]"
+        >
+          {t("hero_description")}
         </p>
 
         {/* btn */}
-        <button className="px-12 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4]">
+        <button
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="px-12 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4]"
+        >
           {t("hero_btn")}
         </button>
       </div>

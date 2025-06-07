@@ -57,14 +57,26 @@ const Pricing = () => {
         {/* Upper part */}
         <div>
           <div className="flex gap-3 items-center mb-5">
-            <h3 className="sub_title text-center mx-auto">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="sub_title text-center mx-auto"
+            >
               {t("pricing_upper_sub_title")}
             </h3>
           </div>
-          <h2 className="text-[34px] font-semibold leading-[150%] text-center mb-3">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-[34px] font-semibold leading-[150%] text-center mb-3"
+          >
             {t("pricing_upper_title")}
           </h2>
-          <p className="text-secondary-gray text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-16">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-secondary-gray text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-16"
+          >
             {t("pricing_upper_description")}
           </p>
         </div>

@@ -9,17 +9,29 @@ const Footer = () => {
     <footer className="pb-20 relative">
       <div className="container">
         {/* Logo */}
-        <h2 className="text-[250px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10">
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-[250px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10"
+        >
           InsightReach
         </h2>
 
         {/* Lower Part */}
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-black font-semibold text-2xl mb-5">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="text-black font-semibold text-2xl mb-5"
+            >
               InsightReach logo.
             </p>
-            <p className="text-secondary-gray text-xl max-w-[520px]">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="text-secondary-gray text-xl max-w-[520px]"
+            >
               {t("footer_text")}
             </p>
           </div>
