@@ -1,37 +1,35 @@
 import Marquee from "react-fast-marquee";
-
-const data = [
-  {
-    id: 1,
-    name: "Tony Stark",
-    role: "CEO , Stark Industries",
-    description:
-      "Budgets and strategies adapt instantly based on live performance data maximizing results without manual effort.",
-  },
-  {
-    id: 2,
-    name: "Tony Stark",
-    role: "CEO , Stark Industries",
-    description:
-      "Budgets and strategies adapt instantly based on live performance data maximizing results without manual effort.",
-  },
-  {
-    id: 3,
-    name: "Tony Stark",
-    role: "CEO , Stark Industries",
-    description:
-      "Budgets and strategies adapt instantly based on live performance data maximizing results without manual effort.",
-  },
-  {
-    id: 4,
-    name: "Tony Stark",
-    role: "CEO , Stark Industries",
-    description:
-      "Budgets and strategies adapt instantly based on live performance data maximizing results without manual effort.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Testimonial = () => {
+  const { t } = useTranslation();
+  const data = [
+    {
+      id: 1,
+      name: t("testimonial_name"),
+      role: t("testimonial_role"),
+      description: t("testimonial_description"),
+    },
+    {
+      id: 2,
+      name: t("testimonial_name"),
+      role: t("testimonial_role"),
+      description: t("testimonial_description"),
+    },
+    {
+      id: 3,
+      name: t("testimonial_name"),
+      role: t("testimonial_role"),
+      description: t("testimonial_description"),
+    },
+    {
+      id: 4,
+      name: t("testimonial_name"),
+      role: t("testimonial_role"),
+      description: t("testimonial_description"),
+    },
+  ];
+
   return (
     <section className="space-y-7">
       <Marquee speed={70} pauseOnHover={true} autoFill={true} className="flex">

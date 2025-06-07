@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { SocialSvg } from "../Components/Svg/SvgContainer";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="pb-20">
       <div className="container">
@@ -16,9 +18,7 @@ const Footer = () => {
               InsightReach logo.
             </p>
             <p className="text-secondary-gray text-xl max-w-[520px]">
-              "2025 [Your Company Name]. All rights reserved.  Built with
-              intelligence. Driven by results. Privacy Policy | Terms of
-              Service"
+              {t("footer_text")}
             </p>
           </div>
 

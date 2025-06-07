@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   FFourSvg,
   FTwoSvg,
@@ -5,38 +6,36 @@ import {
   WOneSvg,
   WTwoSvg,
 } from "../Svg/SvgContainer";
-const data = [
-  {
-    id: 1,
-    icon: <WOneSvg />,
-    title: "Smarter AI Audience Targeting",
-    description:
-      "Pinpoint ideal customers using AI-driven segmentation for better performance, and improved campaign efficiency.",
-  },
-  {
-    id: 2,
-    icon: <FTwoSvg />,
-    title: "Smarter AI Audience Targeting",
-    description:
-      "Continuously adjust your campaigns using live performance data to improve results without manual effort or guesswork.",
-  },
-  {
-    id: 3,
-    icon: <WTwoSvg />,
-    title: "Unified Ad Management Platform",
-    description:
-      "Easily launch and manage ads across all major channels from a single, centralized and intuitive platform.",
-  },
-  {
-    id: 4,
-    icon: <FFourSvg />,
-    title: "ROI Tracking Made Simple",
-    description:
-      "Access clear, actionable insights to measure campaign performance and return on investment with complete transparency.",
-  },
-];
 
 const WhyChoose = () => {
+  const { t } = useTranslation();
+  const data = [
+    {
+      id: 1,
+      icon: <WOneSvg />,
+      title: t("choose_title_one"),
+      description: t("choose_description_one"),
+    },
+    {
+      id: 2,
+      icon: <FTwoSvg />,
+      title: t("choose_title_two"),
+      description: t("choose_description_two"),
+    },
+    {
+      id: 3,
+      icon: <WTwoSvg />,
+      title: t("choose_title_three"),
+      description: t("choose_description_three"),
+    },
+    {
+      id: 4,
+      icon: <FFourSvg />,
+      title: t("choose_title_four"),
+      description: t("choose_description_four"),
+    },
+  ];
+
   return (
     <section className="py-40">
       <div className="container">
@@ -44,21 +43,16 @@ const WhyChoose = () => {
           {/* Left */}
           <div>
             <div className="flex gap-3 items-center mb-5">
-              <h3 className="sub_title">Why Choose InsightReach?</h3>
+              <h3 className="sub_title">{t("choose_upper_sub_title")}</h3>
             </div>
             <h2 className="text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto">
-              Why Thousands of Businesses Trust InsightReach to Power Their
-              Marketing
+              {t("choose_upper_title")}
             </h2>
             <p className="py-10 text-secondary-gray text-xl leading-[165%]">
-              At InsightReach, we combine cutting-edge AI technology with
-              real-time data and seamless multi-channel delivery to help
-              businesses target smarter, spend efficiently, and grow faster. Our
-              platform is designed for marketers who want to achieve more—with
-              less effort, less waste, and far greater precision.
+              {t("choose_upper_description")}
             </p>
             <button className="w-fit flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer mb-20">
-              <p>Get Started</p>
+              <p>{t("choose_upper_btn")}</p>
               <RightArrowSvg />
             </button>
           </div>

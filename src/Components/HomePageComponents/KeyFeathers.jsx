@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   FFourSvg,
   FOneSvg,
@@ -5,38 +6,35 @@ import {
   FTwoSvg,
   RightArrowSvg,
 } from "../Svg/SvgContainer";
-const data = [
-  {
-    id: 1,
-    icon: <FOneSvg />,
-    title: "AI-Powered Audience Segmentation",
-    description:
-      "Target the right people with precision using AI to segment audiences by nationality, profession, and location—automatically and at scale.",
-  },
-  {
-    id: 2,
-    icon: <FTwoSvg />,
-    title: "Multi-Channel Ad Delivery",
-    description:
-      "Run cohesive ad campaigns across Facebook, TikTok, WhatsApp, and more—all from one unified platform.",
-  },
-  {
-    id: 3,
-    icon: <FThreeSvg />,
-    title: "Real-Time Performance Monitoring",
-    description:
-      "Track your campaign metrics live with instant updates on clicks, conversions, reach, and ROI—so you can optimize on the go.",
-  },
-  {
-    id: 4,
-    icon: <FFourSvg />,
-    title: "Smart Budget Allocation",
-    description:
-      "Maximize ROI with AI that automatically distributes your ad spend to the best-performing channels and audiences.",
-  },
-];
 
 const KeyFeathers = () => {
+  const { t } = useTranslation();
+  const data = [
+    {
+      id: 1,
+      icon: <FOneSvg />,
+      title: t("feather_title_one"),
+      description: t("feather_description_one"),
+    },
+    {
+      id: 2,
+      icon: <FTwoSvg />,
+      title: t("feather_title_two"),
+      description: t("feather_description_two"),
+    },
+    {
+      id: 3,
+      icon: <FThreeSvg />,
+      title: t("feather_title_three"),
+      description: t("feather_description_three"),
+    },
+    {
+      id: 4,
+      icon: <FFourSvg />,
+      title: t("feather_title_four"),
+      description: t("feather_description_four"),
+    },
+  ];
   return (
     <section className="py-40">
       <div className="container">
@@ -44,22 +42,20 @@ const KeyFeathers = () => {
         <div className="flex justify-between items-center gap-40 mb-12">
           <div>
             <div className="flex gap-3 items-center mb-5">
-              <h3 className="sub_title">Key Features</h3>
+              <h3 className="sub_title">{t("feather_upper_sub_title")}</h3>
             </div>
             <h2 className="text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto">
-              Revolutionize Your Advertising with AI-Driven Precision
+              {t("feather_upper_title")}
             </h2>
           </div>
           <p className="py-10 text-secondary-gray text-xl leading-[160%]">
-            Harness the Power of Advanced Audience Segmentation, Multi-Channel
-            Campaigns, Real-Time Analytics, and Smart Budgeting—All in One
-            Intelligent Platform
+            {t("feather_upper_description")}
           </p>
         </div>
 
         {/* Get Started btn */}
         <button className="w-fit mx-auto flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer mb-20">
-          <p>Get Started</p>
+          <p>{t("feather_upper_btn")}</p>
           <RightArrowSvg />
         </button>
 

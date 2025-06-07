@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import { SendSvg } from "../Svg/SvgContainer";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -20,14 +22,14 @@ const ContactForm = () => {
       {/* Full Name */}
       <div>
         <label htmlFor="name" className="text-lg font-medium mb-5 block">
-          Full Name
+          {t("full_name")}
         </label>
         <input
           className="outline-none border-b block w-full pb-3"
           id="name"
           type="text"
-          placeholder="Enter Your Name"
-          {...register("name", { required: "Full name is required" })}
+          placeholder={t("full_name_placeholder")}
+          {...register("name", { required: t("full_name_required") })}
         />
         {errors.name && (
           <span className="text-red-500 text-sm">{errors.name.message}</span>
@@ -35,21 +37,20 @@ const ContactForm = () => {
       </div>
 
       {/* Company Name */}
-      {/* Company Name */}
       <div>
         <label
           htmlFor="company_name"
           className="text-lg font-medium mb-5 block"
         >
-          Company Name
+          {t("company_name")}
         </label>
         <input
           className="outline-none border-b block w-full pb-3"
           id="company_name"
           type="text"
-          placeholder="Enter your company name"
+          placeholder={t("company_name_placeholder")}
           {...register("company_name", {
-            required: "Company name is required",
+            required: t("company_name_required"),
           })}
         />
         {errors.company_name && (
@@ -62,15 +63,15 @@ const ContactForm = () => {
       {/* Email */}
       <div>
         <label htmlFor="email" className="text-lg font-medium mb-5 block">
-          Email
+          {t("email")}
         </label>
         <input
           className="outline-none border-b block w-full pb-3"
           id="email"
           type="email"
-          placeholder="Enter Your Email"
+          placeholder={t("email_placeholder")}
           {...register("email", {
-            required: "Email is required",
+            required: t("email_required"),
             pattern: {
               value: /^\S+@\S+$/i,
               message: "Enter a valid email",
@@ -85,14 +86,14 @@ const ContactForm = () => {
       {/* Phone */}
       <div>
         <label htmlFor="phone" className="text-lg font-medium mb-5 block">
-          Phone
+          {t("phone")}
         </label>
         <input
           className="outline-none border-b block w-full pb-3"
           id="phone"
           type="number"
-          placeholder="Enter your Phone Number"
-          {...register("phone", { required: "Phone number is required" })}
+          placeholder={t("phone_placeholder")}
+          {...register("phone", { required: t("phone_required") })}
         />
         {errors.phone && (
           <span className="text-red-500 text-sm">{errors.phone.message}</span>
@@ -101,12 +102,12 @@ const ContactForm = () => {
 
       {/* Service */}
       <div className="col-span-2">
-        <label className="text-lg font-medium mb-5 block">Service</label>
+        <label className="text-lg font-medium mb-5 block">{t("service")}</label>
         <select
           className="outline-none border-b block w-full pb-3"
-          {...register("service", { required: "Please select a service" })}
+          {...register("service", { required: t("service_required") })}
         >
-          <option value="">Select Service</option>
+          <option value=""> {t("service_placeholder")}</option>
           <option value="Service 1">Service 1</option>
           <option value="Service 2">Service 2</option>
           <option value="Service 3">Service 3</option>
@@ -119,14 +120,14 @@ const ContactForm = () => {
       {/* Message */}
       <div className="col-span-2">
         <label htmlFor="message" className="text-lg font-medium mb-5 block">
-          Message
+          {t("message")}
         </label>
         <textarea
           className="outline-none border-b block w-full"
           id="message"
-          placeholder="Enter Your thoughts"
+          placeholder={t("message_placeholder")}
           rows={4}
-          {...register("message", { required: "Message is required" })}
+          {...register("message", { required: t("message_required") })}
         ></textarea>
         {errors.message && (
           <span className="text-red-500 text-sm">{errors.message.message}</span>
@@ -138,7 +139,7 @@ const ContactForm = () => {
         type="submit"
         className="flex gap-2 items-center text-white bg-primary-blue duration-300 transition-all hover:bg-transparent border border-primary-blue rounded-lg py-3 text-center w-full justify-center col-span-2 mx-auto text-lg font-medium hover:text-primary-blue cursor-pointer"
       >
-        <span>Submit</span>
+        <span>{t("btn_text")}</span>
         <SendSvg />
       </button>
     </form>
