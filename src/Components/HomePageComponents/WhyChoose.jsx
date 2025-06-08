@@ -37,53 +37,54 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-40">
+    <section className="pt-10 pb-8 sm:py-14 lg:py-20 xl:py-32 2xl:py-40">
       <div className="container">
-        <div className="grid grid-cols-2 gap-20 items-center">
+        <div className="grid xl:grid-cols-2 gap-10 2xl:gap-20 items-center md:px-2 lg:px-5 2xl:px-0">
           {/* Left */}
           <div>
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="flex gap-3 items-center mb-5"
+              className="flex gap-3 items-center mb-2 lg:mb-5"
             >
               <h3 className="sub_title">{t("choose_upper_sub_title")}</h3>
             </div>
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto"
+              className="text-lg sm:text-xl lg:text-2xl 2xl:text-4xl font-medium sm:font-semibold leading-[140%] max-w-[1000px] mx-auto"
             >
               {t("choose_upper_title")}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="py-10 text-secondary-gray text-xl leading-[165%]"
+              className="py-3 sm:py-5 xl:py-7 2xl:py-10 text-secondary-gray sm:text-lg 2xl:text-xl leading-[165%]"
             >
               {t("choose_upper_description")}
             </p>
             <button
               data-aos="fade-up"
               data-aos-delay="100"
-              className="w-fit flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer mb-20"
+              className="w-fit flex gap-1 sm:gap-2 items-center justify-center text-center text-primary-blue sm:text-lg lg:text-xl font-medium cursor-pointer xl:mb-20"
             >
               <p>{t("choose_upper_btn")}</p>
               <RightArrowSvg />
             </button>
           </div>
+
           {/* Right */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 2xl:gap-6">
             {data?.map(item => (
               <div
                 key={item?.id}
-                className="border border-[#2466FF80] p-6 rounded-2xl shadow bg-white group hover:bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)] transition-all duration-500"
+                className="border border-[#2466FF80] p-5 2xl:p-6 rounded-2xl shadow bg-white group hover:bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)] transition-all duration-500"
               >
                 {/* Icon */}
                 <p
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  className="w-[90px] h-[90px] rounded-full grid place-items-center bg-[#F5F8FC]"
+                  className="w-20 2xl:w-[90px] h-20 2xl:h-[90px] rounded-full grid place-items-center bg-[#F5F8FC]"
                 >
                   {item?.icon}
                 </p>
@@ -91,7 +92,7 @@ const WhyChoose = () => {
                 <h3
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  className="text-xl font-medium py-5 group-hover:text-white"
+                  className="text-lg 2xl:text-xl font-medium py-3 2xl:py-5 group-hover:text-white"
                 >
                   {item?.title}
                 </h3>

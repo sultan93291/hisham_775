@@ -52,68 +52,74 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-40">
+    <section className="py-14 lg:py-20 xl:pb-32 2xl:py-40">
       <div className="container">
-        {/* Upper part */}
-        <div>
-          <div className="flex gap-3 items-center mb-5">
-            <h3
+        <div className="md:px-2 lg:px-5 2xl:px-0">
+          {/* Upper part */}
+          <div>
+            <div className="flex gap-3 items-center mb-2 lg:mb-5">
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="sub_title text-center mx-auto"
+              >
+                {t("pricing_upper_sub_title")}
+              </h3>
+            </div>
+            <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="sub_title text-center mx-auto"
+              className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[34px] font-medium sm:font-semibold leading-[150%] text-center mb-3"
             >
-              {t("pricing_upper_sub_title")}
-            </h3>
+              {t("pricing_upper_title")}
+            </h2>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="text-secondary-gray sm:text-lg lg:text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-10 lg:mb-12 xl:mb-16"
+            >
+              {t("pricing_upper_description")}
+            </p>
           </div>
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-[34px] font-semibold leading-[150%] text-center mb-3"
-          >
-            {t("pricing_upper_title")}
-          </h2>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-secondary-gray text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-16"
-          >
-            {t("pricing_upper_description")}
-          </p>
-        </div>
 
-        {/* Lower part */}
-        <div className="grid grid-cols-3 gap-8">
-          {data?.map(item => (
-            <div
-              key={item?.id}
-              className="p-9 shadow rounded-xl bg-white flex flex-col justify-between group hover:-translate-y-2 transition-transform duration-1000 ease-in-out border border-gray-100 hover:border-primary-blue"
-            >
-              <div>
-                {/* Package Name */}
-                <h3 className="text-3xl font-medium">{item?.package_name}</h3>
-                {/* Price */}
-                <h4 className="text-[64px] font-semibold">${item?.price}</h4>
-                <p className="text-secondary-gray pt-5 pb-10">
-                  {t("free_per_month")}
-                </p>
-                <p className="text-lg font-medium mb-5">{item?.title}</p>
-                <ul className="space-y-5 text-secondary-gray">
-                  {item?.feathers?.map((feather, idx) => (
-                    <li key={idx} className="flex gap-2 items-center">
-                      <CheckSvg />
-                      <p>{feather}</p>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-lg font-medium mt-5 mb-10">
-                  {item?.eligibility}
-                </p>
+          {/* Lower part */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 2xl:gap-8">
+            {data?.map(item => (
+              <div
+                key={item?.id}
+                className="p-5 2xl:p-9 shadow rounded-xl bg-white flex flex-col justify-between group hover:-translate-y-2 transition-transform duration-1000 ease-in-out border border-gray-100 hover:border-primary-blue"
+              >
+                <div>
+                  {/* Package Name */}
+                  <h3 className="text-xl lg:text-2xl 2xl:text-3xl font-medium">
+                    {item?.package_name}
+                  </h3>
+                  {/* Price */}
+                  <h4 className="text-4xl mt-3 2xl:mt-0 2xl:text-[64px] font-semibold">
+                    ${item?.price}
+                  </h4>
+                  <p className="text-secondary-gray py-3 lg:py-5 2xl:pb-10">
+                    {t("free_per_month")}
+                  </p>
+                  <p className="lg:text-lg font-medium mb-5">{item?.title}</p>
+                  <ul className="space-y-3 lg:space-y-5 text-secondary-gray">
+                    {item?.feathers?.map((feather, idx) => (
+                      <li key={idx} className="flex gap-1 lg:gap-2 items-center">
+                        <CheckSvg />
+                        <p>{feather}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="lg:text-lg font-medium mt-5 mb-5 lg:mb-10">
+                    {item?.eligibility}
+                  </p>
+                </div>
+                <button className="block group-hover:bg-gray-800 group-hover:text-white transition-all duration-300 w-full py-3 lg:py-4 rounded-xl border cursor-pointer">
+                  {item?.btn_text}
+                </button>
               </div>
-              <button className="block group-hover:bg-gray-800 group-hover:text-white transition-all duration-300 w-full py-4 rounded-xl border cursor-pointer">
-                {item?.btn_text}
-              </button>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
