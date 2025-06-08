@@ -26,33 +26,37 @@ const Video = () => {
   };
 
   return (
-    <section className="w-[1400px] h-[650px] relative group container !-mt-40">
-      <video
-        data-aos="fade-up"
-        data-aos-delay="1000"
-        ref={videoRef}
-        className="w-full h-full object-cover rounded-2xl"
-        src={video}
-      ></video>
+    <section className="max-w-[1400px] mx-auto h-[650px] relative group !-mt-40 grid place-items-center">
+      <div className="container">
+        <div className="px-5 2xl:0">
+          <video
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            ref={videoRef}
+            className="w-full h-full object-cover rounded-2xl"
+            src={video}
+          ></video>
 
-      {/* play button */}
-      <div
-        onClick={handlePlay}
-        className={`size-20 grid place-items-center transition-all duration-700 items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 bg-primary-blue -translate-y-1/2 cursor-pointer ${
-          !isPlaying ? "flex" : "hidden"
-        }`}
-      >
-        <PlayButtonSvg />
-      </div>
+          {/* play button */}
+          <div
+            onClick={handlePlay}
+            className={`size-16 xl:size-20 grid place-items-center transition-all duration-700 items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-blue cursor-pointer ${
+              !isPlaying ? "flex" : "hidden"
+            }`}
+          >
+            <PlayButtonSvg />
+          </div>
 
-      {/* pause button */}
-      <div
-        onClick={handlePause}
-        className={`size-16 opacity-0 group-hover:opacity-100 transition-all duration-700  items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer   ${
-          isPlaying ? "flex" : "hidden"
-        } `}
-      >
-        <PauseButtonSvg />
+          {/* pause button */}
+          <div
+            onClick={handlePause}
+            className={`size-16 opacity-0 group-hover:opacity-100 transition-all duration-700  items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer  ${
+              isPlaying ? "flex" : "hidden"
+            } `}
+          >
+            <PauseButtonSvg />
+          </div>
+        </div>
       </div>
     </section>
   );

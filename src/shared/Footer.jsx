@@ -6,13 +6,13 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="pb-20 relative">
+    <footer className="pb-10 2xl:pb-20 relative px-5 2xl:px-0">
       <div className="container">
         {/* Logo */}
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-[250px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10"
+          className="text-[132px] xl:text-[180px] 2xl:text-[232px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10"
         >
           InsightReach
         </h2>
@@ -30,7 +30,7 @@ const Footer = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-secondary-gray text-xl max-w-[520px]"
+              className="text-secondary-gray text-lg xl:text-xl max-w-[520px]"
             >
               {t("footer_text")}
             </p>
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       {/* Floating Share Button + Hover Menu */}
-      <div className="fixed bottom-20 right-20 z-50 group">
+      <div className="fixed bottom-10 xl:bottom-20 right-10 xl:right-20 z-50 group">
         {/* Social Links - show on hover */}
         <div className="absolute bottom-24 right-1/2 translate-x-1/2 flex flex-col items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <a
@@ -69,8 +69,8 @@ const Footer = () => {
         </div>
 
         {/* Share Button */}
-        <button className="w-20 h-20 bg-gradient-to-b from-[#2466FF] to-[#163D99] rounded-full grid place-items-center text-white shadow-xl hover:scale-105 transition cursor-pointer">
-          <GrShareOption className="text-4xl" />
+        <button className="w-16 xl:w-20 h-16 xl:h-20 bg-gradient-to-b from-[#2466FF] to-[#163D99] rounded-full grid place-items-center text-white shadow-xl hover:scale-105 transition cursor-pointer">
+          <GrShareOption className="text-3xl xl:text-4xl" />
         </button>
       </div>
     </footer>

@@ -58,8 +58,7 @@ export const PlayButtonSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
+      className="w-[28px] xl:w-[36px] h-[28px] xl:h-[36px]"
       viewBox="0 0 36 42"
       fill="none"
     >
@@ -106,8 +105,7 @@ export function FOneSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 48 48"
       fill="none"
     >
@@ -127,8 +125,7 @@ export function FTwoSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >
@@ -168,8 +165,7 @@ export function FThreeSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >
@@ -193,8 +189,7 @@ export function FFourSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >
@@ -230,8 +225,7 @@ export function HOneSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 48 48"
       fill="none"
     >
@@ -251,8 +245,7 @@ export function HTwoSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >
@@ -268,8 +261,7 @@ export function HThreeSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 48 48"
       fill="none"
     >
@@ -320,8 +312,7 @@ export function WOneSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >
@@ -353,8 +344,7 @@ export function WTwoSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49"
-      height="48"
+      className="w-[38px] 2xl:w-[48px] h-[38px] 2xl:h-[48px]"
       viewBox="0 0 49 48"
       fill="none"
     >

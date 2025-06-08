@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ContactSvg } from "../Components/Svg/SvgContainer";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // For Translation
@@ -17,15 +18,15 @@ const Navbar = () => {
   }, [i18n.language]);
 
   return (
-    <nav className="py-6 bg-slate-50 sticky top-0 z-50">
+    <nav className="py-5 xl:py-6 bg-slate-50 sticky top-0 z-50 px-5 2xl:px-0">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* Left - Logo */}
-          <div>
+          <Link to="/">
             <p className="text-black font-semibold text-2xl">
               InsightReach logo.
             </p>
-          </div>
+          </Link>
           {/* Right */}
           <div className="flex gap-10 items-center">
             {/* Language Options */}
