@@ -12,7 +12,7 @@ const Footer = () => {
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-5xl sm:text-7xl lg:text-[132px] xl:text-[180px] 2xl:text-[232px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-7 sm:mb-10"
+          className="text-[48px] sm:text-[80px] md:text-[100px] lg:text-[150px] xl:text-[180px] 2xl:text-[230px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-5 sm:mb-10"
         >
           InsightReach
         </h2>
