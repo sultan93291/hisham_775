@@ -23,3 +23,13 @@ body {
 .sub_title{
   @apply text-lg sm:text-xl lg:text-2xl bg-gradient-to-r from-[#2466FF] to-[#FF32B4] font-medium bg-clip-text text-transparent
 }
+
+/* Fix for RTL marquee items */
+.rtl-marquee > div {
+  transform: none !important;
+}
+
+/* Ensure text alignment is correct in RTL */
+[dir="rtl"] .testimonial-card {
+  text-align: right;
+}
