@@ -69,14 +69,14 @@ const Pricing = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-xl lg:text-2xl xl:text-3xl 2xl:text-[34px] font-semibold leading-[150%] text-center mb-3"
+              className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[34px] font-medium sm:font-semibold leading-[150%] text-center mb-3"
             >
               {t("pricing_upper_title")}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-secondary-gray text-lg lg:text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-10 lg:mb-12 xl:mb-16"
+              className="text-secondary-gray sm:text-lg lg:text-xl leading-[160%] max-w-[900px] mx-auto text-center mb-10 lg:mb-12 xl:mb-16"
             >
               {t("pricing_upper_description")}
             </p>

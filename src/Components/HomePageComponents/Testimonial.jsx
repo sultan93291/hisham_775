@@ -36,7 +36,7 @@ const Testimonial = () => {
         {data?.map((item, idx) => (
           <div
             key={item?.id}
-            className={`p-7 rounded-2xl shadow w-[400px] md:w-[500px] mr-7 ${
+            className={`p-5 sm:p-7 rounded-2xl shadow w-[350px] sm:w-[400px] md:w-[500px] mr-7 ${
               idx % 2 === 0
                 ? "bg-white"
                 : "bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)]"
@@ -82,7 +82,7 @@ const Testimonial = () => {
         {data?.map((item, idx) => (
           <div
             key={item?.id}
-            className={`p-7 rounded-2xl shadow w-[400px] md:w-[500px] mr-7 ${
+            className={`p-5 sm:p-7 rounded-2xl shadow w-[350px] sm:w-[400px] md:w-[500px] mr-7 ${
               idx % 2 === 0
                 ? "bg-white"
                 : "bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)]"

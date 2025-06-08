@@ -33,14 +33,14 @@ const Video = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
             ref={videoRef}
-            className="w-full h-[320px] md:h-[380px] lg:h-[500px] xl:h-[650px] object-cover rounded-2xl"
+            className="w-full h-[270px] sm:h-[320px] md:h-[380px] lg:h-[500px] xl:h-[650px] object-cover rounded-2xl"
             src={video}
           ></video>
 
           {/* play button */}
           <div
             onClick={handlePlay}
-            className={`size-16 xl:size-20 grid place-items-center transition-all duration-700 items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-blue cursor-pointer ${
+            className={`size-12 sm:size-16 xl:size-20 grid place-items-center transition-all duration-700 items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-blue cursor-pointer ${
               !isPlaying ? "flex" : "hidden"
             }`}
           >
@@ -50,7 +50,7 @@ const Video = () => {
           {/* pause button */}
           <div
             onClick={handlePause}
-            className={`size-16 opacity-0 group-hover:opacity-100 transition-all duration-700  items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer  ${
+            className={`size-12 sm:size-16 opacity-0 group-hover:opacity-100 transition-all duration-700  items-center justify-center bg-primary rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer  ${
               isPlaying ? "flex" : "hidden"
             } `}
           >

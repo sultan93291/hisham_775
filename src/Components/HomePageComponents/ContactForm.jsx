@@ -17,10 +17,10 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="grid grid-cols-2 gap-10 xl:gap-12 2xl:gap-x-14 2xl:gap-y-16"
+      className="grid grid-cols-2 gap-7 sm:gap-10 xl:gap-12 2xl:gap-x-14 2xl:gap-y-16"
     >
       {/* Full Name */}
-      <div>
+      <div className="col-span-2 sm:col-span-1">
         <label
           htmlFor="name"
           className="text-lg font-medium mb-2 lg:mb-5 block"
@@ -40,7 +40,7 @@ const ContactForm = () => {
       </div>
 
       {/* Company Name */}
-      <div>
+      <div className="col-span-2 sm:col-span-1">
         <label
           htmlFor="company_name"
           className="text-lg font-medium mb-2 lg:mb-5 block"
@@ -64,7 +64,7 @@ const ContactForm = () => {
       </div>
 
       {/* Email */}
-      <div>
+      <div className="col-span-2 sm:col-span-1">
         <label
           htmlFor="email"
           className="text-lg font-medium mb-2 lg:mb-5 block"
@@ -90,7 +90,7 @@ const ContactForm = () => {
       </div>
 
       {/* Phone */}
-      <div>
+      <div className="col-span-2 sm:col-span-1">
         <label
           htmlFor="phone"
           className="text-lg font-medium mb-2 lg:mb-5 block"
@@ -151,7 +151,7 @@ const ContactForm = () => {
       {/* Submit Button */}
       <button
         type="submit"
-        className="flex gap-2 items-center text-white bg-primary-blue duration-300 transition-all hover:bg-transparent border border-primary-blue rounded-lg py-3 text-center w-full justify-center col-span-2 mx-auto text-lg font-medium hover:text-primary-blue cursor-pointer"
+        className="flex gap-2 items-center text-white bg-primary-blue duration-300 transition-all hover:bg-transparent border border-primary-blue rounded-lg py-2.5 sm:py-3 text-center w-full justify-center col-span-2 mx-auto text-lg font-medium hover:text-primary-blue cursor-pointer"
       >
         <span>{t("btn_text")}</span>
         <SendSvg />

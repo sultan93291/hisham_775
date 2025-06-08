@@ -37,7 +37,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-14 lg:py-20 xl:py-32 2xl:py-40">
+    <section className="pt-10 pb-8 sm:py-14 lg:py-20 xl:py-32 2xl:py-40">
       <div className="container">
         <div className="grid xl:grid-cols-2 gap-10 2xl:gap-20 items-center md:px-2 lg:px-5 2xl:px-0">
           {/* Left */}
@@ -52,21 +52,21 @@ const WhyChoose = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-xl lg:text-2xl 2xl:text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto"
+              className="text-lg sm:text-xl lg:text-2xl 2xl:text-4xl font-medium sm:font-semibold leading-[140%] max-w-[1000px] mx-auto"
             >
               {t("choose_upper_title")}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="py-5 xl:py-7 2xl:py-10 text-secondary-gray text-lg 2xl:text-xl leading-[165%]"
+              className="py-3 sm:py-5 xl:py-7 2xl:py-10 text-secondary-gray sm:text-lg 2xl:text-xl leading-[165%]"
             >
               {t("choose_upper_description")}
             </p>
             <button
               data-aos="fade-up"
               data-aos-delay="100"
-              className="w-fit flex gap-2 items-center justify-center text-center text-primary-blue text-lg lg:text-xl font-medium cursor-pointer xl:mb-20"
+              className="w-fit flex gap-1 sm:gap-2 items-center justify-center text-center text-primary-blue sm:text-lg lg:text-xl font-medium cursor-pointer xl:mb-20"
             >
               <p>{t("choose_upper_btn")}</p>
               <RightArrowSvg />
@@ -74,7 +74,7 @@ const WhyChoose = () => {
           </div>
 
           {/* Right */}
-          <div className="grid grid-cols-2 gap-5 2xl:gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 2xl:gap-6">
             {data?.map(item => (
               <div
                 key={item?.id}

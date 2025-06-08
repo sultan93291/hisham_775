@@ -42,7 +42,7 @@ const HowItWorks = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-xl lg:text-2xl xl:text-3xl 2xl:text-[34px] font-semibold leading-[150%] max-w-[1190px] text-center mx-auto mb-10 xl:mb-16"
+              className="sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[34px] font-medium sm:font-semibold leading-[150%] max-w-[1190px] text-center mx-auto mb-7 sm:mb-10 xl:mb-16"
             >
               {t("work_upper_description")}
             </h2>
@@ -64,7 +64,7 @@ const HowItWorks = () => {
                 <h3
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  className="text-lg lg:text-xl 2xl:text-2xl font-medium leading-[150%] py-5 group-hover:text-white"
+                  className="text-lg lg:text-xl 2xl:text-2xl font-medium leading-[150%] py-3 sm:py-5 group-hover:text-white"
                 >
                   {item?.title}
                 </h3>

@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section
-      className="bg-no-repeat bg-center bg-cover object-cover text-center pt-20 lg:pt-28 pb-44 xl:pb-64 2xl:pb-80 relative"
+      className="bg-no-repeat bg-center bg-cover object-cover text-center pt-10 sm:pt-20 lg:pt-28 pb-44 xl:pb-64 2xl:pb-80 relative"
       style={{ backgroundImage: `url(${hero})` }}
     >
       <div className="container">
@@ -19,7 +19,7 @@ const Hero = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="100"
-            className="flex gap-3 items-center justify-center mb-3 lg:mb-5"
+            className="flex gap-2 sm:gap-3 items-center justify-center mb-3 lg:mb-5"
           >
             <h3 className="sub_title">{t("hero_sub_title")}</h3>
             <MouseSvg />
@@ -29,7 +29,7 @@ const Hero = () => {
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-3xl lg:text-5xl xl:text-[52px] 2xl:text-6xl font-semibold leading-[150%] max-w-[1000px] mx-auto"
+            className="text-xl sm:text-3xl lg:text-5xl xl:text-[52px] 2xl:text-6xl font-semibold leading-[150%] max-w-[1000px] mx-auto"
           >
             {t("hero_title")}
           </h1>
@@ -38,7 +38,7 @@ const Hero = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="500"
-            className="py-8 lg:py-10 max-w-[1000px] mx-auto text-secondary-gray text-lg lg:text-xl leading-[160%]"
+            className="py-5 sm:py-8 lg:py-10 max-w-[1000px] mx-auto text-secondary-gray sm:text-lg lg:text-xl leading-[160%]"
           >
             {t("hero_description")}
           </p>
@@ -57,7 +57,7 @@ const Hero = () => {
           <button
             data-aos="fade-up"
             data-aos-delay="700"
-            className="px-5 md:px-8 lg:px-12 py-3 md:py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4] relative"
+            className="px-5 md:px-8 lg:px-12 py-3 md:py-4 font-medium cursor-pointer shadow rounded-lg sm:rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4] relative"
           >
             {t("hero_btn")}
           </button>

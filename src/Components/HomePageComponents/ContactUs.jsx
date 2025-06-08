@@ -20,14 +20,14 @@ const ContactUs = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-xl lg:text-2xl 2xl:text-4xl font-semibold"
+              className="text-lg sm:text-xl lg:text-2xl 2xl:text-4xl font-medium sm:font-semibold"
             >
               {t("contact_title")}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="mt-3 lg:mt-5 mb-5 xl:mb-8 text-secondary-gray text-lg 2xl:text-xl leading-[165%]"
+              className="mt-1 sm:mt-3 lg:mt-5 mb-5 xl:mb-8 text-secondary-gray sm:text-lg 2xl:text-xl leading-[165%]"
             >
               {t("contact_description")}
             </p>
@@ -35,16 +35,16 @@ const ContactUs = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="flex gap-5 items-center"
+              className="flex gap-3 sm:gap-5 items-center"
             >
               {/* Phone */}
-              <p className="flex gap-2 items-center px-12 2xl:px-16 cursor-pointer py-3 rounded-xl border border-primary-blue text-primary-blue font-medium transition-all duration-300 hover:bg-primary-blue hover:text-white">
+              <p className="flex gap-2 items-center px-6 sm:px-12 2xl:px-16 cursor-pointer py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-primary-blue text-primary-blue font-medium transition-all duration-300 hover:bg-primary-blue hover:text-white">
                 <PhoneSvg />
                 <span>{t("contact_btn_one")}</span>
               </p>
 
               {/* Email */}
-              <p className="flex gap-2 items-center px-12 2xl:px-16 cursor-pointer py-3 rounded-xl border border-primary-blue text-primary-blue font-medium transition-all duration-300 hover:bg-primary-blue hover:text-white">
+              <p className="flex gap-2 items-center px-6 sm:px-12 2xl:px-16 cursor-pointer py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-primary-blue text-primary-blue font-medium transition-all duration-300 hover:bg-primary-blue hover:text-white">
                 <EmailSvg />
                 <span>{t("contact_btn_two")}</span>
               </p>
