@@ -26,14 +26,14 @@ const Video = () => {
   };
 
   return (
-    <section className="max-w-[1400px] mx-auto h-[650px] relative group !-mt-40 grid place-items-center">
+    <section className="max-w-[1400px] mx-auto relative group -mt-32 xl:!-mt-40 grid place-items-center">
       <div className="container">
-        <div className="px-5 2xl:0">
+        <div className="md:px-2 lg:px-5 2xl:px-0">
           <video
             data-aos="fade-up"
             data-aos-delay="1000"
             ref={videoRef}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-[320px] md:h-[380px] lg:h-[500px] xl:h-[650px] object-cover rounded-2xl"
             src={video}
           ></video>
 

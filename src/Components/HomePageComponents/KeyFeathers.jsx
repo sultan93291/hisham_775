@@ -36,13 +36,13 @@ const KeyFeathers = () => {
     },
   ];
   return (
-    <section className="pb-20 xl:py-20 2xl:py-40">
+    <section className="py-14 lg:py-20 xl:py-20 2xl:py-40">
       <div className="container">
-        <div className="px-5 2xl:px-0">
+        <div className="md:px-2 lg:px-5 2xl:px-0">
           {/* Upper part */}
-          <div className="flex flex-col xl:flex-row justify-between items-center gap-3 xl:gap-20 2xl:gap-40 mb-10 xl:mb-12">
+          <div className="flex flex-col xl:flex-row justify-between items-center gap-3 xl:gap-20 2xl:gap-40 mb-5 lg:mb-10 xl:mb-12">
             <div className="w-full">
-              <div className="flex gap-3 items-center mb-5">
+              <div className="flex gap-3 items-center mb-2 lg:mb-5">
                 <h3
                   data-aos="fade-up"
                   data-aos-delay="100"
@@ -62,7 +62,7 @@ const KeyFeathers = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="xl:py-10 text-secondary-gray text-xl leading-[160%]"
+              className="xl:py-10 text-secondary-gray text-lg lg:text-xl leading-[160%]"
             >
               {t("feather_upper_description")}
             </p>
@@ -72,7 +72,7 @@ const KeyFeathers = () => {
           <button
             data-aos="fade-up"
             data-aos-delay="100"
-            className="w-fit mx-auto flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer mb-10 xl:mb-14 2xl:mb-20"
+            className="w-fit mx-auto flex gap-2 items-center justify-center text-center text-primary-blue text-lg lg:text-xl font-medium cursor-pointer mb-10 xl:mb-14 2xl:mb-20"
           >
             <p>{t("feather_upper_btn")}</p>
             <RightArrowSvg />

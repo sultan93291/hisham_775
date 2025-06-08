@@ -21,7 +21,10 @@ const ContactForm = () => {
     >
       {/* Full Name */}
       <div>
-        <label htmlFor="name" className="text-lg font-medium mb-5 block">
+        <label
+          htmlFor="name"
+          className="text-lg font-medium mb-2 lg:mb-5 block"
+        >
           {t("full_name")}
         </label>
         <input
@@ -40,7 +43,7 @@ const ContactForm = () => {
       <div>
         <label
           htmlFor="company_name"
-          className="text-lg font-medium mb-5 block"
+          className="text-lg font-medium mb-2 lg:mb-5 block"
         >
           {t("company_name")}
         </label>
@@ -62,7 +65,10 @@ const ContactForm = () => {
 
       {/* Email */}
       <div>
-        <label htmlFor="email" className="text-lg font-medium mb-5 block">
+        <label
+          htmlFor="email"
+          className="text-lg font-medium mb-2 lg:mb-5 block"
+        >
           {t("email")}
         </label>
         <input
@@ -85,7 +91,10 @@ const ContactForm = () => {
 
       {/* Phone */}
       <div>
-        <label htmlFor="phone" className="text-lg font-medium mb-5 block">
+        <label
+          htmlFor="phone"
+          className="text-lg font-medium mb-2 lg:mb-5 block"
+        >
           {t("phone")}
         </label>
         <input
@@ -102,7 +111,9 @@ const ContactForm = () => {
 
       {/* Service */}
       <div className="col-span-2">
-        <label className="text-lg font-medium mb-5 block">{t("service")}</label>
+        <label className="text-lg font-medium mb-2 lg:mb-5 block">
+          {t("service")}
+        </label>
         <select
           className="outline-none border-b block w-full pb-3"
           {...register("service", { required: t("service_required") })}
@@ -119,7 +130,10 @@ const ContactForm = () => {
 
       {/* Message */}
       <div className="col-span-2">
-        <label htmlFor="message" className="text-lg font-medium mb-5 block">
+        <label
+          htmlFor="message"
+          className="text-lg font-medium mb-2 lg:mb-5 block"
+        >
           {t("message")}
         </label>
         <textarea

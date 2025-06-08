@@ -6,13 +6,13 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="pb-10 2xl:pb-20 relative px-5 2xl:px-0">
+    <footer className="pb-10 2xl:pb-20 relative md:px-2 lg:px-5 2xl:px-0">
       <div className="container">
         {/* Logo */}
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-[132px] xl:text-[180px] 2xl:text-[232px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10"
+          className="text-7xl lg:text-[132px] xl:text-[180px] 2xl:text-[232px] font-medium bg-gradient-to-r from-[#C8D9FF] to-[#F0F5FF] bg-clip-text text-transparent font-karla text-center tracking-tight mb-10"
         >
           InsightReach
         </h2>

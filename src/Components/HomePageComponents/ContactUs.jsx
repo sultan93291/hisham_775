@@ -7,27 +7,27 @@ const ContactUs = () => {
   return (
     <section className="pb-10 xl:pb-20 2xl:pb-40">
       <div className="container">
-        <div className="grid xl:grid-cols-12 gap-10 xl:gap-20 px-5 2xl:px-0">
+        <div className="grid xl:grid-cols-12 gap-10 xl:gap-20 md:px-2 lg:px-5 2xl:px-0">
           {/* Left side */}
           <div className="xl:col-span-5">
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="flex gap-3 items-center mb-5"
+              className="flex gap-3 items-center mb-2 lg:mb-5"
             >
               <h3 className="sub_title">{t("contact_sub_title")}</h3>
             </div>
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl 2xl:text-4xl font-semibold"
+              className="text-xl lg:text-2xl 2xl:text-4xl font-semibold"
             >
               {t("contact_title")}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="mt-5 mb-5 xl:mb-8 text-secondary-gray text-lg 2xl:text-xl leading-[165%]"
+              className="mt-3 lg:mt-5 mb-5 xl:mb-8 text-secondary-gray text-lg 2xl:text-xl leading-[165%]"
             >
               {t("contact_description")}
             </p>

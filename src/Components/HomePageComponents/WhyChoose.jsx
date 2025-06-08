@@ -37,22 +37,22 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-20 xl:py-32 2xl:py-40">
+    <section className="py-14 lg:py-20 xl:py-32 2xl:py-40">
       <div className="container">
-        <div className="grid xl:grid-cols-2 gap-10 2xl:gap-20 items-center px-5 2xl:px-0">
+        <div className="grid xl:grid-cols-2 gap-10 2xl:gap-20 items-center md:px-2 lg:px-5 2xl:px-0">
           {/* Left */}
           <div>
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="flex gap-3 items-center mb-5"
+              className="flex gap-3 items-center mb-2 lg:mb-5"
             >
               <h3 className="sub_title">{t("choose_upper_sub_title")}</h3>
             </div>
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl 2xl:text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto"
+              className="text-xl lg:text-2xl 2xl:text-4xl font-semibold leading-[140%] max-w-[1000px] mx-auto"
             >
               {t("choose_upper_title")}
             </h2>
@@ -66,7 +66,7 @@ const WhyChoose = () => {
             <button
               data-aos="fade-up"
               data-aos-delay="100"
-              className="w-fit flex gap-2 items-center justify-center text-center text-primary-blue text-xl font-medium cursor-pointer xl:mb-20"
+              className="w-fit flex gap-2 items-center justify-center text-center text-primary-blue text-lg lg:text-xl font-medium cursor-pointer xl:mb-20"
             >
               <p>{t("choose_upper_btn")}</p>
               <RightArrowSvg />

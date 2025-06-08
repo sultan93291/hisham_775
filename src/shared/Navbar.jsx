@@ -18,7 +18,7 @@ const Navbar = () => {
   }, [i18n.language]);
 
   return (
-    <nav className="py-5 xl:py-6 bg-slate-50 sticky top-0 z-50 px-5 2xl:px-0">
+    <nav className="py-5 xl:py-6 bg-slate-50 sticky top-0 z-50 md:px-2 lg:px-5 2xl:px-0">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* Left - Logo */}
@@ -28,7 +28,7 @@ const Navbar = () => {
             </p>
           </Link>
           {/* Right */}
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-7 lg:gap-10 items-center">
             {/* Language Options */}
             <select
               className="border-none outline-none text-primary-blue font-medium text-lg bg-transparent"
@@ -40,7 +40,7 @@ const Navbar = () => {
             </select>
 
             {/* Contact btn */}
-            <button className="flex gap-3 items-center px-10 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4]">
+            <button className="flex gap-3 items-center px-7 lg:px-10 py-4 font-medium cursor-pointer shadow rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4]">
               <ContactSvg />
               <p>{t("nav_contact")}</p>
             </button>

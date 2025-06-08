@@ -36,7 +36,7 @@ const Testimonial = () => {
         {data?.map((item, idx) => (
           <div
             key={item?.id}
-            className={`p-7 rounded-2xl shadow w-[500px] mr-7 ${
+            className={`p-7 rounded-2xl shadow w-[400px] md:w-[500px] mr-7 ${
               idx % 2 === 0
                 ? "bg-white"
                 : "bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)]"
@@ -44,7 +44,7 @@ const Testimonial = () => {
           >
             {/* Name */}
             <h3
-              className={`text-2xl font-medium leading-[150%] ${
+              className={`text-xl md:text-2xl font-medium leading-[150%] ${
                 idx % 2 === 0 ? "" : "text-white"
               }`}
             >
@@ -53,7 +53,7 @@ const Testimonial = () => {
 
             {/* Role */}
             <p
-              className={`mt-3 mb-10  ${
+              className={`mt-3 mb-7 md:mb-10  ${
                 idx % 2 === 0 ? "text-secondary-gray" : "text-gray-300"
               }`}
             >
@@ -82,7 +82,7 @@ const Testimonial = () => {
         {data?.map((item, idx) => (
           <div
             key={item?.id}
-            className={`p-7 rounded-2xl shadow w-[500px] mr-7 ${
+            className={`p-7 rounded-2xl shadow w-[400px] md:w-[500px] mr-7 ${
               idx % 2 === 0
                 ? "bg-white"
                 : "bg-[linear-gradient(235deg,_#2466FF_3.26%,_#163D99_98.02%)]"
@@ -90,7 +90,7 @@ const Testimonial = () => {
           >
             {/* Name */}
             <h3
-              className={`text-2xl font-medium leading-[150%] ${
+              className={`text-xl md:text-2xl font-medium leading-[150%] ${
                 idx % 2 === 0 ? "" : "text-white"
               }`}
             >
@@ -99,7 +99,7 @@ const Testimonial = () => {
 
             {/* Role */}
             <p
-              className={`mt-3 mb-10  ${
+              className={`mt-3 mb-7 md:mb-10  ${
                 idx % 2 === 0 ? "text-secondary-gray" : "text-gray-300"
               }`}
             >
