@@ -4,6 +4,7 @@ import union from "../../assets/hero_union.png";
 import { MouseSvg } from "../Svg/SvgContainer";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../assets/lottieAnimation.json";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -53,14 +54,25 @@ const Hero = () => {
             />
           </div>
 
-          {/* btn */}
-          <button
-            data-aos="fade-up"
-            data-aos-delay="700"
-            className="px-5 md:px-8 lg:px-12 py-3 md:py-4 font-medium cursor-pointer shadow rounded-lg sm:rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4] relative"
-          >
-            {t("hero_btn")}
-          </button>
+          {/* btns */}
+          <div className="flex gap-5 items-center justify-center flex-wrap">
+            <button
+              data-aos="fade-up"
+              data-aos-delay="700"
+              className="px-5 md:px-8 lg:px-12 py-3 md:py-4 font-medium cursor-pointer shadow rounded-lg sm:rounded-xl bg-primary-blue text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:from-[#2466FF] hover:to-[#FF32B4] relative"
+            >
+              {t("hero_btn")}
+            </button>
+            <Link to="/estemate">
+              <button
+                data-aos="fade-up"
+                data-aos-delay="700"
+                className="px-5 md:px-8 lg:px-12 py-3 md:py-4 font-medium cursor-pointer shadow rounded-lg sm:rounded-xl text-primary-blue relative"
+              >
+                {t("hero_btn2")}
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 

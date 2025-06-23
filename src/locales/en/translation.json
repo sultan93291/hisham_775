@@ -6,6 +6,7 @@
   "hero_title": "InsightReach Smart Audience Targeting for Higher ROI",
   "hero_description": "An AI-powered marketing platform that delivers hyper-targeted ads using real-time data helping businesses reach the right customers at the lowest cost. Launch Your Campaign",
   "hero_btn": "Launch Your Campaign",
+  "hero_btn2": "Get your estemate",
 
   "feather_upper_title": "Revolutionize Your Advertising with AI-Driven Precision",
   "feather_upper_sub_title": "Key Features",
@@ -143,5 +144,9 @@
   "message": "Message",
   "message_placeholder": "Enter your thoughts",
   "message_required": "Message is required",
-  "btn_text": "Submit"
+  "btn_text": "Submit",
+
+  "estemate_title": "Estimate Your Campaign Budget",
+  "estemate_sub_title": "Get your estemate",
+  "estemate_description": "Tell us about your business, goals, and budget our team will review the details and send you a customized campaign estimate tailored to your needs."
 }
