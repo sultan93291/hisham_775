@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { GrShareOption } from "react-icons/gr";
+import TawkMessenger from "../Components/TawkTo/TawkMessenger";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ const Footer = () => {
         >
           InsightReach
         </h2>
-
+        <TawkMessenger />
         {/* Lower Part */}
         <div className="flex items-center justify-between">
           <div>
@@ -39,7 +40,7 @@ const Footer = () => {
       </div>
 
       {/* Floating Share Button + Hover Menu */}
-      <div className="fixed bottom-8 sm:bottom-10 right-8 sm:right-10 z-50 group">
+      <div className="fixed bottom-8 sm:bottom-24 right-9 sm:right-5 z-50 group">
         <div className="absolute bottom-20 sm:bottom-24 right-1/2 translate-x-1/2 flex flex-col items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <a
             href="https://wa.me/1234567890"
@@ -68,7 +69,7 @@ const Footer = () => {
         </div>
 
         {/* Share Button */}
-        <button className="w-14 sm:w-16 xl:w-20 h-14 sm:h-16 xl:h-20 bg-gradient-to-b from-[#2466FF] to-[#163D99] rounded-full grid place-items-center text-white shadow-xl hover:scale-105 transition cursor-pointer">
+        <button className="w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-b from-[#2466FF] to-[#163D99] rounded-full grid place-items-center text-white shadow-xl hover:scale-105 transition cursor-pointer">
           <GrShareOption className="text-[22px] sm:text-3xl xl:text-4xl" />
         </button>
       </div>
