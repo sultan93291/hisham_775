@@ -39,8 +39,7 @@ const Footer = () => {
       </div>
 
       {/* Floating Share Button + Hover Menu */}
-      <div className="fixed bottom-8 sm:bottom-10 xl:bottom-20 right-8 sm:right-10 xl:right-20 z-50 group">
-        {/* Social Links - show on hover */}
+      <div className="fixed bottom-8 sm:bottom-10 right-8 sm:right-10 z-50 group">
         <div className="absolute bottom-20 sm:bottom-24 right-1/2 translate-x-1/2 flex flex-col items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <a
             href="https://wa.me/1234567890"
