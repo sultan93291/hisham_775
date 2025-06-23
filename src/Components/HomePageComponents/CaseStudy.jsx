@@ -30,7 +30,7 @@ const CaseStudy = () => {
   ];
 
   return (
-    <section className="pt-10 pb-8 sm:py-14 lg:py-20 xl:py-32 2xl:py-40">
+    <section>
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-5 lg:gap-10 2xl:gap-20 items-center md:px-2 lg:px-5 2xl:px-0">
           {/* Left */}

@@ -6,7 +6,7 @@ const Founder = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="pt-10 pb-8 sm:py-14 lg:py-20 xl:py-32 2xl:py-40">
+    <section className="pb-8 sm:pb-14 lg:pb-20 xl:pb-32 2xl:pb-40">
       <div className="container">
         <div className="grid xl:grid-cols-2 gap-10 2xl:gap-20 items-center md:px-2 lg:px-5 2xl:px-0">
           {/* Left */}
