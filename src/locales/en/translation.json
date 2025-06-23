@@ -6,6 +6,7 @@
   "hero_title": "InsightReach Smart Audience Targeting for Higher ROI",
   "hero_description": "An AI-powered marketing platform that delivers hyper-targeted ads using real-time data helping businesses reach the right customers at the lowest cost. Launch Your Campaign",
   "hero_btn": "Launch Your Campaign",
+  "hero_btn2": "Get your estemate",
 
   "feather_upper_title": "Revolutionize Your Advertising with AI-Driven Precision",
   "feather_upper_sub_title": "Key Features",
@@ -85,6 +86,40 @@
   "choose_title_four": "ROI Tracking Made Simple",
   "choose_description_four": "Access clear, actionable insights to measure campaign performance and return on investment with complete transparency.",
 
+  "case_study_title": "+72% Increase in Conversion Rate",
+  "case_study_sub_title": "Case Study",
+  "case_study_description": "Discover how real businesses used InsightReach to increase conversions, lower ad costs, and scale faster through AI-powered targeting and real-time campaign optimization. Let me know if you’d like alternative tones or industry-specific versions!",
+
+  "case_title_one": "UrbanFit Apparel – E-commerce Brand",
+  "case_description_one": "UrbanFit, a fast-growing e-commerce brand, partnered with InsightReach to overcome rising ad costs and inconsistent targeting. By leveraging InsightReach’s AI-powered audience segmentation and smart budget allocation, they were able to streamline their advertising strategy across Facebook and TikTok. The platform automatically identified high-performing audience segments based on location and behavior, then optimized campaigns in real time. Within just six weeks, UrbanFit achieved a 72% increase in conversion rates and reduced their customer acquisition costs by 35%. With less manual effort and more intelligent automation, they scaled their growth faster than ever—while keeping total ad spend under control.",
+  "case_title_two": "UrbanFit Apparel – E-commerce Brand",
+  "case_description_two": "UrbanFit, a fast-growing e-commerce brand, partnered with InsightReach to overcome rising ad costs and inconsistent targeting. By leveraging InsightReach’s AI-powered audience segmentation and smart budget allocation, they were able to streamline their advertising strategy across Facebook and TikTok. The platform automatically identified high-performing audience segments based on location and behavior, then optimized campaigns in real time. Within just six weeks, UrbanFit achieved a 72% increase in conversion rates and reduced their customer acquisition costs by 35%. With less manual effort and more intelligent automation, they scaled their growth faster than ever—while keeping total ad spend under control.",
+  "case_title_three": "UrbanFit Apparel – E-commerce Brand",
+  "case_description_three": "UrbanFit, a fast-growing e-commerce brand, partnered with InsightReach to overcome rising ad costs and inconsistent targeting. By leveraging InsightReach’s AI-powered audience segmentation and smart budget allocation, they were able to streamline their advertising strategy across Facebook and TikTok. The platform automatically identified high-performing audience segments based on location and behavior, then optimized campaigns in real time. Within just six weeks, UrbanFit achieved a 72% increase in conversion rates and reduced their customer acquisition costs by 35%. With less manual effort and more intelligent automation, they scaled their growth faster than ever—while keeping total ad spend under control.",
+  "read_more_btn": "Read More",
+
+  "faq_title": "Frequently Asked Questions",
+  "faq_sub_title": "FAQ",
+  "faq_description": "Find quick answers to common questions about our platform, pricing, features, and how InsightReach can help you drive better marketing results.",
+
+  "faq_title_one": "Can I integrate this with my online store or app?",
+  "faq_description_one": "Yes. We offer ready-made plugins for platforms like Shopify and WooCommerce, as well as API and SDK options for mobile apps or custom e-commerce systems",
+  "faq_title_two": "What payment methods do you support?",
+  "faq_description_two": "Yes. We offer ready-made plugins for platforms like Shopify and WooCommerce, as well as API and SDK options for mobile apps or custom e-commerce systems",
+  "faq_title_three": "Is there a setup fee or monthly charge?",
+  "faq_description_three": "Yes. We offer ready-made plugins for platforms like Shopify and WooCommerce, as well as API and SDK options for mobile apps or custom e-commerce systems",
+  "faq_title_four": "Is there a setup fee or monthly charge?",
+  "faq_description_four": "Yes. We offer ready-made plugins for platforms like Shopify and WooCommerce, as well as API and SDK options for mobile apps or custom e-commerce systems",
+  "faq_title_five": "How quickly will I receive the funds?",
+  "faq_description_five": "Yes. We offer ready-made plugins for platforms like Shopify and WooCommerce, as well as API and SDK options for mobile apps or custom e-commerce systems",
+
+  "founder_title": "A Message from Our Founder",
+  "founder_name": "Hisham Hasan",
+  "founder_role": "Founder InsightReach",
+  "founder_sub_title": "Founder Message",
+  "founder_description": "At InsightReach, we believe in making advanced marketing simple, smart, and accessible. Our journey began with a vision to empower businesses through AI-driven solutions. Today, we’re proud to help brands grow faster, work smarter, and connect more meaningfully with their audiences. This is just the beginning.",
+  "founder_btn": "Read more",
+
   "contact_title": "We’d Love to Hear from You",
   "contact_sub_title": "Contact Us",
   "contact_description": "Have a project in mind or need more info? Fill out the form and our team will get back to you shortly.",
@@ -109,5 +144,17 @@
   "message": "Message",
   "message_placeholder": "Enter your thoughts",
   "message_required": "Message is required",
-  "btn_text": "Submit"
+  "btn_text": "Submit",
+
+  "estemate_title": "Estimate Your Campaign Budget",
+  "estemate_sub_title": "Get your estemate",
+  "estemate_description": "Tell us about your business, goals, and budget our team will review the details and send you a customized campaign estimate tailored to your needs.",
+  
+  "services_type": "Select Business Type",
+  "campaign": "Select Campaign Objective",
+  "service_type_required": "Business type is required",
+  "campaign_required": "Campaign objective is required",
+  "daily_budget": "Select daily budget",
+  "budget_required": "Daily budget is required",
+  "btn_text2": "Back To Home"
 }

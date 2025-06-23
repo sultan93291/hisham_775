@@ -2,7 +2,7 @@ export const ContactSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-     className="w-[18px] sm:w-[24px] h-[18px] sm:h-[24px]"
+      className="w-[18px] sm:w-[24px] h-[18px] sm:h-[24px]"
       viewBox="0 0 24 24"
       fill="none"
     >
@@ -441,6 +441,26 @@ export function PhoneSvg() {
           />
         </clipPath>
       </defs>
+    </svg>
+  );
+}
+
+export function BackSvg() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="33"
+      height="32"
+      viewBox="0 0 33 32"
+      fill="none"
+    >
+      <path
+        d="M12.083 20L4.08301 12M4.08301 12L12.083 4M4.08301 12H20.083C22.2047 12 24.2396 12.8429 25.7399 14.3431C27.2402 15.8434 28.083 17.8783 28.083 20C28.083 22.1217 27.2402 24.1566 25.7399 25.6569C24.2396 27.1571 22.2047 28 20.083 28H16.083"
+        stroke="#2466FF"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 }
