@@ -7,6 +7,8 @@ import Testimonial from "../Components/HomePageComponents/Testimonial";
 import WhyChoose from "../Components/HomePageComponents/WhyChoose";
 import ContactUs from "../Components/HomePageComponents/ContactUs";
 import CaseStudy from "../Components/HomePageComponents/CaseStudy";
+import FAQ from "../Components/HomePageComponents/FAQ";
+import Founder from "../Components/HomePageComponents/Founder";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <Testimonial />
       <WhyChoose />
       <CaseStudy />
+      <FAQ />
+      <Founder />
       <ContactUs />
     </>
   );
