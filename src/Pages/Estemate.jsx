@@ -4,7 +4,7 @@ import EstimateForm from "../Components/HomePageComponents/EstimateForm";
 const Estemate = () => {
   const { t } = useTranslation();
   return (
-    <section className="pb-10 xl:pb-20 2xl:pb-40 pt-32">
+    <section className="pb-10 xl:pb-20 2xl:pb-40 pt-5 md:pt-32">
       <div className="container">
         <div className="grid xl:grid-cols-12 gap-10 xl:gap-20 md:px-2 lg:px-5 2xl:px-0">
           {/* Left side */}

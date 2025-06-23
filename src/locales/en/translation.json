@@ -148,5 +148,13 @@
 
   "estemate_title": "Estimate Your Campaign Budget",
   "estemate_sub_title": "Get your estemate",
-  "estemate_description": "Tell us about your business, goals, and budget our team will review the details and send you a customized campaign estimate tailored to your needs."
+  "estemate_description": "Tell us about your business, goals, and budget our team will review the details and send you a customized campaign estimate tailored to your needs.",
+  
+  "services_type": "Select Business Type",
+  "campaign": "Select Campaign Objective",
+  "service_type_required": "Business type is required",
+  "campaign_required": "Campaign objective is required",
+  "daily_budget": "Select daily budget",
+  "budget_required": "Daily budget is required",
+  "btn_text2": "Back To Home"
 }
