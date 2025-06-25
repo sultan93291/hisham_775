@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { CheckSvg } from "../Svg/SvgContainer";
+import { CheckSvg, PopularSvg } from "../Svg/SvgContainer";
 
 const Pricing = () => {
   const { t } = useTranslation();
@@ -84,16 +84,24 @@ const Pricing = () => {
 
           {/* Lower part */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 2xl:gap-8">
-            {data?.map(item => (
+            {data?.map((item, idx) => (
               <div
                 key={item?.id}
                 className="p-5 2xl:p-9 shadow rounded-xl bg-white flex flex-col justify-between group hover:-translate-y-2 transition-transform duration-1000 ease-in-out border border-gray-100 hover:border-primary-blue"
               >
                 <div>
                   {/* Package Name */}
-                  <h3 className="text-xl lg:text-2xl 2xl:text-3xl font-medium">
-                    {item?.package_name}
-                  </h3>
+                  <div className="flex gap-5 items-center mb-5">
+                    <h3 className="text-xl lg:text-2xl 2xl:text-3xl font-medium">
+                      {item?.package_name}
+                    </h3>
+                    {idx === 1 && (
+                      <button className="flex gap-1 font-medium items-center bg-primary-blue text-white px-4 py-2 rounded-2xl">
+                        <PopularSvg />
+                        <span>Most Popular</span>
+                      </button>
+                    )}
+                  </div>
                   {/* Price */}
                   <h4 className="text-4xl mt-3 2xl:mt-0 2xl:text-[64px] font-semibold">
                     ${item?.price}
@@ -104,7 +112,10 @@ const Pricing = () => {
                   <p className="lg:text-lg font-medium mb-5">{item?.title}</p>
                   <ul className="space-y-3 lg:space-y-5 text-secondary-gray">
                     {item?.feathers?.map((feather, idx) => (
-                      <li key={idx} className="flex gap-1 lg:gap-2 items-center">
+                      <li
+                        key={idx}
+                        className="flex gap-1 lg:gap-2 items-center"
+                      >
                         <CheckSvg />
                         <p>{feather}</p>
                       </li>
