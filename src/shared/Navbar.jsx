@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ContactSvg } from "../Components/Svg/SvgContainer";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   // For Translation
   const { t, i18n } = useTranslation();
